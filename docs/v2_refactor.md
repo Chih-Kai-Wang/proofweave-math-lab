@@ -2,7 +2,7 @@
 
 ## Baseline
 
-- Repository: `f0909172434/proofweave-math-lab`
+- Repository: `Chih-Kai-Wang/proofweave-math-lab`
 - Baseline commit: `4d9e1bce919f329a54d0a5d38b60e77629489a13`
 - Baseline unit tests: 104 passed
 - Baseline `graph-check`: PASS

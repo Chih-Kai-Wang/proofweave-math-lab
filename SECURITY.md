@@ -15,7 +15,7 @@ mathematical errors.
 ## Report a vulnerability privately
 
 Do not open a public issue for a suspected vulnerability. Use
-[GitHub private vulnerability reporting](https://github.com/f0909172434/proofweave-math-lab/security/advisories/new).
+[GitHub private vulnerability reporting](https://github.com/Chih-Kai-Wang/proofweave-math-lab/security/advisories/new).
 If that form is unavailable, open a public issue containing no exploit details,
 credentials, theorem text, private research, or sensitive paths and ask for a
 private reporting channel.
