@@ -6,8 +6,8 @@
 
 [繁體中文](README.zh-TW.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-[![Core CI](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/codeql.yml)
+[![Core CI](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/codeql.yml)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
 [![Lean 4.32.2](https://img.shields.io/badge/Lean-4.32.2-4E64C4.svg)](lean-toolchain)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -32,10 +32,10 @@ certify as `PARTIAL` in the output.
 > repository and evidence release is `v0.1.0`, while the Core runtime, package and protocol are
 > version `2.0.0`. The two version numbers track different things.
 
-The [published release](https://github.com/f0909172434/proofweave-math-lab/releases/tag/v0.1.0)
+The [published release](https://github.com/Chih-Kai-Wang/proofweave-math-lab/releases/tag/v0.1.0)
 for `v0.1.0` records 42/42 fixed-corpus cases passing. That includes 14/14 positive cases, zero
 false certifications across 14 paired negative cases, and 0/8 accepted escape attacks. The
-[tagged CI run](https://github.com/f0909172434/proofweave-math-lab/actions/runs/31348288988)
+[tagged CI run](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/runs/31348288988)
 ran 79 fast tests at 96% branch-aware coverage with two Lean-dependent skips. Its real-Lean jobs
 ran all 79 tests at 97% coverage with zero permitted skips on both Ubuntu and Windows, using pinned
 Lean/Mathlib 4.32.2.
@@ -124,7 +124,7 @@ or from `ELAN_HOME`. A shim that exists only on `PATH` does not count as a pinne
 ### 2. Install and freeze the formal environment
 
 ```console
-git clone https://github.com/f0909172434/proofweave-math-lab.git
+git clone https://github.com/Chih-Kai-Wang/proofweave-math-lab.git
 cd proofweave-math-lab
 python -m pip install --no-deps --editable .
 lake update mathlib
@@ -395,8 +395,8 @@ exchange data automatically:
 | Project | Narrow responsibility |
 | --- | --- |
 | **ProofWeave Core** | Certify exact formal targets, expose partial obligations, and retain content-addressed proof runs. |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | Audit broader claim–evidence traceability and human workflow records; it is not a theorem prover. |
-| [HonestCI](https://github.com/f0909172434/honest-ci) | Check whether expected test evidence actually ran; it makes no mathematical truth claim. |
+| [RigorGraph](https://github.com/Chih-Kai-Wang/rigorgraph) | Audit broader claim–evidence traceability and human workflow records; it is not a theorem prover. |
+| [HonestCI](https://github.com/Chih-Kai-Wang/honest-ci) | Check whether expected test evidence actually ran; it makes no mathematical truth claim. |
 ## Development and migration
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing Core. The enforced design budget is ten

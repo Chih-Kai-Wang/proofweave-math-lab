@@ -6,8 +6,8 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
-[![Core CI](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/f0909172434/proofweave-math-lab/actions/workflows/codeql.yml)
+[![Core CI](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/codeql.yml/badge.svg)](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/workflows/codeql.yml)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
 [![Lean 4.32.2](https://img.shields.io/badge/Lean-4.32.2-4E64C4.svg)](lean-toolchain)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -29,10 +29,10 @@ Core 不會自己找證明，不會把任意自然語言翻成 Lean，也不會�
 > **專案狀態：**這是實驗性的研究基礎設施。已發布的 repository 與 evidence release
 > 是 `v0.1.0`，Core 的 runtime、package 與 protocol 則是 `2.0.0`。這兩個版本號各自追蹤不同的東西。
 
-[公開 release](https://github.com/f0909172434/proofweave-math-lab/releases/tag/v0.1.0)
+[公開 release](https://github.com/Chih-Kai-Wang/proofweave-math-lab/releases/tag/v0.1.0)
 記錄了 `v0.1.0` 在固定語料上 42/42 通過。其中 positive cases 為 14/14，14 個成對 negative
 cases 被錯誤認證的數量為 0，8 個 escape attacks 的接受數為 0。
-[該 tag 的 CI](https://github.com/f0909172434/proofweave-math-lab/actions/runs/31348288988)
+[該 tag 的 CI](https://github.com/Chih-Kai-Wang/proofweave-math-lab/actions/runs/31348288988)
 執行了 79 個 fast tests，branch-aware coverage 為 96%，其中有 2 個測試因需要 Lean
 而略過。真實 Lean 的 jobs 在 Ubuntu 與 Windows 上都跑完全部 79 個測試，coverage
 為 97%，允許略過的測試數為 0，使用的是固定版本的 Lean/Mathlib 4.32.2。
@@ -111,7 +111,7 @@ Repository 用 [`lean-toolchain`](lean-toolchain) 固定 Lean 版本，用
 ### 2. 安裝並固定 formal environment
 
 ```console
-git clone https://github.com/f0909172434/proofweave-math-lab.git
+git clone https://github.com/Chih-Kai-Wang/proofweave-math-lab.git
 cd proofweave-math-lab
 python -m pip install --no-deps --editable .
 lake update mathlib
@@ -369,8 +369,8 @@ CI 在 Ubuntu 與 Windows 上以 Python 3.11 和 3.14 執行測試，並在兩�
 | 專案 | 窄責任範圍 |
 | --- | --- |
 | **ProofWeave Core** | 認證精確 formal target、暴露 partial obligations、保留 content-addressed proof runs。 |
-| [RigorGraph](https://github.com/f0909172434/rigorgraph) | 稽核較廣的 claim–evidence traceability 與人類 workflow records；不是 theorem prover。 |
-| [HonestCI](https://github.com/f0909172434/honest-ci) | 檢查預期測試 evidence 是否真的執行；不主張數學真實性。 |
+| [RigorGraph](https://github.com/Chih-Kai-Wang/rigorgraph) | 稽核較廣的 claim–evidence traceability 與人類 workflow records；不是 theorem prover。 |
+| [HonestCI](https://github.com/Chih-Kai-Wang/honest-ci) | 檢查預期測試 evidence 是否真的執行；不主張數學真實性。 |
 ## 開發與遷移
 
 修改 Core 前請先讀 [CONTRIBUTING.md](CONTRIBUTING.md)。強制執行的設計預算是：十個
